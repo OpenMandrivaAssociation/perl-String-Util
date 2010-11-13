@@ -1,5 +1,5 @@
 %define upstream_name    String-Util
-%define upstream_version 0-12
+%define upstream_version 1.01
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -11,6 +11,7 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Debug::ShowStuff)
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
@@ -24,7 +25,6 @@ strings.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -39,8 +39,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes README
+%doc README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
