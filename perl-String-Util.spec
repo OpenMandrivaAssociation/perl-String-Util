@@ -1,15 +1,15 @@
 %define upstream_name    String-Util
-%define upstream_version 1.01
+%define upstream_version 1.21
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 1.21
+Release:	1
 
 Summary:	Handy string processing utilities
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/String/String-Util-1.21.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Debug::ShowStuff)
@@ -55,3 +55,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sat Apr 10 2010 cpan2dist 0-12-1mdv
 - initial mdv release, generated with cpan2dist
+

@@ -1,2 +1,4 @@
+removed_sources:
+  String-Util-1.01.tar.gz: 7fc72e240d7bdc92abd10e134b8b1c9b953604f3
 sources:
-  "String-Util-1.01.tar.gz": 7fc72e240d7bdc92abd10e134b8b1c9b953604f3
+  String-Util-1.21.tar.gz: 78b31b682f3dc9d353212da7d11950a051467843
